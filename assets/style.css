@@ -1,0 +1,25 @@
+.jumbotron {
+  background-color: goldenrod;
+  /* color: white; */
+  text-align: center;
+}
+
+.btn-group > .btn-group:not(:first-child),
+.btn-group > .btn:not(:first-child) {
+  margin-left: 10px;
+}
+.btn-primary {
+  background-color: #ffbc00;
+  border-color: #212529;
+  color: black;
+}
+.btn-group {
+  text-align: center;
+  margin-left: 50px;
+}
+.form-inline {
+  margin-left: 120px;
+}
+.btn {
+  border-radius: 0;
+}

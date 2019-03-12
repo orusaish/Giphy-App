@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Giphy App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid ">
+      <div class="container">
+        <h1 class="display-4">Your Favourite Giphy</h1>
+        <h2>Click the buttons to display GIPHYs of your Choice<br /></h2>
+        <h3>
+          Click the GIPHYs to pause and play<br />Search to add more buttons!
+        </h3>
+      </div>
+    </div>
+    <form class="form-inline" id="emotionsSearch">
+      <div class="form-group">
+        <label for="emotionsInput">Add more Giphy of your choice</label>
+        <input type="text" id="emotionsInput" />
+      </div>
+      <!-- Button triggers show to be added -->
+      <input id="addShow" type="submit" value="submit" />
+    </form>
+    <div class="row"></div>
+    <div class="row" style="margin-top:15px">
+      <div class="container">
+        <div class="btn-group inline pull-left">
+          <button class="btn btn-primary" id="show" data-search="happy">
+            Happy
+          </button>
+          <button class="btn btn-primary" id="show" data-search="sad">
+            Sad
+          </button>
+          <button class="btn btn-primary" id="show" data-search="excited">
+            Excited
+          </button>
+          <button class="btn btn-primary" id="show" data-search="worried">
+            Worried
+          </button>
+
+          <div id="myButtons" style="margin-left:10px"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top:20px">
+      <div class="container">
+        <span><div id="gifArea"></div></span>
+      </div>
+    </div>
+    <script type="text/javascript" src="assets/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </body>
+</html>
